@@ -1,0 +1,11 @@
+<h2> Search Currencies</h2>
+<form action="/currency" method="GET">
+    <label>Name</label>
+    <input type="text" name="name"> 
+    <!-- value="<%= searchOptions.name %>" -->
+    <button type="submit">Search</button>
+</form>
+<br>
+<% currencies.forEach(currency => {  %>
+    <div> <%= currency.name %> </div>
+<% }) %>

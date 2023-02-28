@@ -1,0 +1,13 @@
+<header>
+    <nav>
+        <a href="/">
+            Currency app
+        </a>
+        <% if (locals.user != undefined || locals.user != null) {%>
+            <ul> 
+                <a href="/currency">Currencies</a>
+                <a href="/currency/new">Add New Currency</a>
+            </ul>
+        <%  }  %>
+    </nav>
+</header>
